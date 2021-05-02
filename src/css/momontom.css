@@ -1,0 +1,247 @@
+html,
+body,
+h1,
+h2,
+div,
+p,
+ul,
+li,
+button {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2 {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+input {
+	width: 100%;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	font-size: inherit;
+	line-height: inherit;
+	appearance: none;
+}
+
+html {
+	font-size: 10px;
+	line-height: 10px;
+}
+
+body {
+	font-size: 16px;
+	line-height: 19px;
+	color: #f5f6fa;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.sc_local {
+	position: relative;
+	padding-top: 80px;
+	text-align: center;
+}
+
+.sc_local .location_box {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.sc_local .location_box .sl_location {
+	margin-right: 3px;
+	font-weight: bold;
+}
+
+.sc_local .location_box .sl_degree,
+.sc_local .location_box .sl_weather {
+	font-size: 13px;
+	opacity: 0.8;
+}
+
+.sc_local .clock_box {
+	font-size: 60px;
+	line-height: 63px;
+	font-weight: bold;
+	letter-spacing: -0.7px;
+}
+
+.sc_local .clock_box .sl_12 {
+	display: block;
+	font-size: 26px;
+	line-height: 29px;
+	font-weight: 500;
+	opacity: 0.8;
+	letter-spacing: 2.5px;
+}
+
+.sc_local .clock_box .sl_time_wrap {
+	position: relative;
+	padding: 0 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sc_local .clock_box .sl_seconds {
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	font-size: 27px;
+	line-height: 30px;
+}
+
+.sc_local .clock_box .sl_dot {
+	display: inline-block;
+	font-size: 40px;
+	line-height: 43px;
+	font-weight: 600;
+	vertical-align: 9px;
+}
+
+.sc_user {
+	margin-top: 23px;
+	text-align: center;
+}
+
+.sc_user .su_input {
+	width: 300px;
+	padding: 5px 10px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.sc_user .su_btn_remove {
+	padding: 6px 4px 4px 6px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	font-size: 13px;
+	line-height: 16px;
+	vertical-align: 3px;
+}
+
+.sc_user .su_hello {
+	font-size: 23px;
+	line-height: 33px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: -0.3px;
+}
+
+.sc_user .su_name {
+	font-size: 27px;
+	color: white;
+	font-weight: 500;
+}
+
+.sc_todo {
+	margin-top: 20px;
+}
+
+.sc_todo .st_input_box {
+	min-width: 300px;
+	max-width: 800px;
+	padding: 5px 10px;
+	margin: 20px auto 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.sc_todo .st_btn_remove,
+.sc_todo .st_btn_finish {
+	position: absolute;
+	top: 8px;
+	padding: 6px 4px 4px 6px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.sc_todo .st_btn_remove {
+	right: 8px;
+}
+
+.sc_todo .st_btn_finish {
+	right: 38px;
+	color: #000;
+}
+
+.sc_todo .st_list_todo {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sc_todo .st_todo_item {
+	position: relative;
+	width: 160px;
+	height: 160px;
+	padding: 45px 8px 8px;
+	margin: 7px;
+	background-color: #fbc531;
+	color: #303038;
+	box-sizing: border-box;
+}
+
+.sc_todo .st_todo {
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+.sc_todo .st_todo_item.type_finish {
+	background-color: #dcdde1;
+}
+
+.sc_todo .st_todo_item.type_finish .st_btn_finish {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #4834d4;
+}
+
+.wrap {
+	min-width: 400px;
+	max-width: 800px;
+	padding: 0 15px 40px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}

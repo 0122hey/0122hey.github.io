@@ -1,0 +1,62 @@
+.sc_local {
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+
+
+    .location_box {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        .sl_location {
+            margin-right: 3px;
+            font-weight: bold;
+        }
+
+        .sl_degree,
+        .sl_weather {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    }
+
+    .clock_box {
+        font-size: 60px;
+        line-height: 63px;
+        font-weight: bold;
+        letter-spacing: -0.7px;
+
+        .sl_12 {
+            display: block;
+            font-size: 26px;
+            line-height: 29px;
+            font-weight: 500;
+            opacity: 0.8;
+            letter-spacing: 2.5px;
+        }
+        
+        .sl_time_wrap {
+            position: relative;
+            padding: 0 40px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .sl_seconds {
+            position: absolute;
+            bottom: 4px;
+            right: 0;
+            font-size: 27px;
+            line-height: 30px;
+        }
+
+        .sl_dot {
+            display: inline-block;
+            font-size: 40px;
+            line-height: 43px;
+            font-weight: 600;
+            vertical-align: 9px;
+        }
+    }
+}

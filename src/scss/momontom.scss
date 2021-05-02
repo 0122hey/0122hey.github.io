@@ -1,0 +1,20 @@
+@import 'import/reset.scss';
+@import 'import/local.scss';
+@import 'import/user.scss';
+@import 'import/todo.scss';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #4834d4
+}
+
+.wrap {
+    min-width: 400px;
+    max-width: 800px;
+    padding: 0 15px 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}

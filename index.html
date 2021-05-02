@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/css/momontom.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header role="banner">
+            <h1 class="blind">Momontom</h1>
+        </header>
+
+        <main role="main">
+            <section class="sc_local">
+                <h2 class="blind">Current</h2>
+                <div class="location_box js-geo">
+                    <span class="sl_location js-geo-location">Hanam</span>
+                    <span class="sl_degree js-geo-degree">8℃</span> ,
+                    <span class="sl_weather js-geo-weather">Clear</span>
+                </div>
+
+                <div class="clock_box js-clock">
+                    <span class="sl_12 js-clock-12">AM</span>
+                    <div class="sl_time_wrap">
+                        <span class="sl_hours js-clock-hours">00</span>
+                        <span class="sl_dot">:</span>
+                        <span class="sl_minutes js-clock-minutes">00</span>
+                        <span class="sl_seconds js-clock-seconds">00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc_user">
+                <h2 class="blind">User Name</h2>
+                <div class="su_input js-user-insert">
+                    <form id="js-user-form">
+                        <input tpye="text" placeholder="Whats your name?">
+                    </form>
+                </div>
+                <p class="su_hello js-user-greeting">Have a good day <span class="su_name js-user-name"></span> 💕</p>      
+            </section>
+
+            <section class="sc_todo">
+                <h2 class="blind">Todo List</h2>
+                <div class="st_input_box">
+                    <form id="js-todo-form">
+                        <input type="text" placeholder="Write a todo">
+                    </form>
+                </div>
+                <ul class="st_list_todo js-todo-list"></ul>
+            </section>
+        </main>
+    </div>
+</body>
+<script type="module" src="./src/js/momontom.js"></script>
+</html>

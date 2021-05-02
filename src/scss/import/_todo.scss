@@ -1,0 +1,71 @@
+.sc_todo {
+    margin-top: 20px;
+
+    .st_input_box {
+        min-width: 300px;
+        max-width: 800px;
+        padding: 5px 10px;
+        margin: 20px auto 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 2px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .st_btn_remove,
+    .st_btn_finish {
+        position: absolute;
+        top: 8px;
+        padding: 6px 4px 4px 6px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 2px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .st_btn_remove {
+        right: 8px;
+    }
+
+    .st_btn_finish {
+        right: 38px;
+        color: #000;
+    }
+
+    .st_list_todo {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .st_todo_item {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        padding: 45px 8px 8px;
+        margin: 7px;
+        background-color: #fbc531;
+        
+        color: #303038;
+        box-sizing: border-box;
+    }
+
+    .st_todo {
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .st_todo_item.type_finish {
+        background-color: #dcdde1;
+
+        .st_btn_finish {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
